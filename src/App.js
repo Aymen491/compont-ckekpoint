@@ -1,25 +1,26 @@
-import logo from './logo.svg';
+import React from 'react'
 import './App.css';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import FullName from "E:/projet-react/react/my-page/src/component/profile/FullName.js";
+import ProfilePhoto from './component/profile/ProfilPhoto';
+import Adress from "E:/projet-react/react/my-page/src/component/profile/Adress.js"
+import Fini from "./component/profile/Foot.js"
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+<div className="app">
+    <div>
+      <FullName/>
+      < div>
+      <ProfilePhoto/>
+      </div>
+      <div>
+      <Adress/>
+      </div>
+      <div>
+        <Fini/>
+      </div>
+    </div> 
     </div>
   );
 }
-
-export default App;
+export default App ;
